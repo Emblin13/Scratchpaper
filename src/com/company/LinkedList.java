@@ -53,6 +53,7 @@ public class LinkedList {
         return remain;
     }
 
+
     public void reverse2() {
         if(this.size <= 1) {
             return;
