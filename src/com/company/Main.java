@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.stack.LinkedStack;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,7 +18,9 @@ public class Main {
 //        list2.reverse2();
 //        System.out.println(list2);
         //two(3);
-        four(3);
+        //four(3);
+        LinkedStack ls1 = new LinkedStack();
+        LinkedStack.main(null); //demo method of LinkedStack
     }
 
     static int fac(int n) {
