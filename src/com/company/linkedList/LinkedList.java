@@ -1,4 +1,4 @@
-package com.company;
+package com.company.linkedList;
 
 public class LinkedList {
 
@@ -43,34 +43,23 @@ public class LinkedList {
         this.size++;
     }
 
-    public LinkedList recursiveReverse(Node node) {
-        if (node == null) {
-            return new LinkedList();
-        }
-        LinkedList remain = recursiveReverse(node.next);
-        remain.addLast(node.data);
-
-        return remain;
+    public static void initializeList (LinkedList ll1) {
+        ll1.addLast("Bob Smith");
+        ll1.addLast("Space");
+        ll1.addLast("John");
+        ll1.addLast("Henry");
+        ll1.addLast("Apple");
+        ll1.addLast("Yogurt");
+        ll1.addLast("Pizza");
     }
 
-
-    public void reverse2() {
-        if(this.size <= 1) {
-            return;
-        }
-        this.head.next = reverse(this.head.next, this.head.next.next);
-    }
-
-    public Node reverse(Node first, Node second) {
-        Node h = null;
-        if (second != null) {
-            h = reverse(second, second.next);
-            second.next = first;
-            first.next = null;
-        }else {
-            return first;
-        }
-        return h;
+    public static void demo () {
+        LinkedList ll1 = new LinkedList();
+        initializeList(ll1);
+        System.out.println(ll1);
+        ll1.addFirst("12345");
+        ll1.addLast("abcde");
+        System.out.println(ll1);
     }
 
     @Override

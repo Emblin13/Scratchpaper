@@ -1,56 +1,22 @@
 package com.company;
 
+import com.company.linkedList.DoublyLLTester;
+import com.company.linkedList.LinkedList;
+import com.company.recursion.Recursion;
 import com.company.stack.LinkedStack;
 
 public class Main {
 
     public static void main(String[] args) {
-        //System.out.println(fac(5));
-//        LinkedList list1 = new LinkedList();
-//        list1.addFirst("bob");
-//        list1.addFirst("tim");
-//        list1.addFirst("john");
-//        list1.addFirst("rob");
-//        list1.addFirst("steve");
-//        LinkedList list2 = list1.recursiveReverse(list1.head.next);
-//        System.out.println(list1);
-//        System.out.println(list2);
-//        list2.reverse2();
-//        System.out.println(list2);
-        //two(3);
-        //four(3);
-        LinkedStack ls1 = new LinkedStack();
-        LinkedStack.main(null); //demo method of LinkedStack
-    }
+        //LinkedStack.main(null); //demo of LinkedStack
 
-    static int fac(int n) {
-        if (n == 0) {
-            return 1;
-        }else {
-            return n * fac(n-1);
-        }
-    }
+        //LinkedList.demo(); //demo of singular linked list with dummy head
 
-    public static void two (int n) {
-        if (n > 0) {
-            System.out.println("n: " + n);
-            two (n-1);
-            two (n-1);
-        }else if (n < 0) {
-            two (n+1);
-            two (n+1);
-            System.out.println("n: " + n);
-        }
-    }
+        //DoublyLLTester.main(null); //demo of a circular doubly linked list
 
-    public static void four (int n) {
-        if (n > 1) {
-            System.out.println(n);
-            four(n-1);
-        }
-        for (int i = 0; i < n; i++) {
-            System.out.println(i);
-        }
-    }
+        //LinkedList ll1 = new LinkedList();
+        //Recursion rec = new Recursion(ll1);
+        //rec.demo(); //demo of recursion on a linked list
 
+    }
 }
