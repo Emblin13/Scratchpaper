@@ -4,6 +4,8 @@ import com.company.linkedList.DoublyLLTester;
 import com.company.linkedList.LinkedList;
 import com.company.recursion.Recursion;
 import com.company.stack.LinkedStack;
+import com.company.hashTable.Hashtable;
+
 
 public class Main {
 
@@ -17,6 +19,8 @@ public class Main {
         //LinkedList ll1 = new LinkedList();
         //Recursion rec = new Recursion(ll1);
         //rec.demo(); //demo of recursion on a linked list
+
+        //Hashtable.main(null); //demo of hashtable
 
     }
 }
