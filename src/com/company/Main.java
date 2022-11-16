@@ -1,10 +1,12 @@
 package com.company;
 
 import com.company.linkedList.DoublyLLTester;
-import com.company.linkedList.LinkedList;
 import com.company.recursion.Recursion;
 import com.company.stack.LinkedStack;
 import com.company.hashTable.Hashtable;
+
+import java.util.Iterator;
+import java.util.LinkedList;
 
 
 public class Main {
@@ -21,6 +23,12 @@ public class Main {
         //rec.demo(); //demo of recursion on a linked list
 
         //Hashtable.main(null); //demo of hashtable
+
+        LinkedList<Object> llTest = new LinkedList<>();
+        llTest.add("Bob");
+        llTest.add("Smith");
+        System.out.println(llTest.getFirst() + " " + llTest.getLast());
+        Iterator<Object> iterator = llTest.iterator();
 
     }
 }
