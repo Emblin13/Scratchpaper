@@ -72,6 +72,7 @@ public class BinarySearchTree {
     }
 
     public void printTreeIn() {  //inorder traversal
+        System.out.println("Inorder traversal");
         printTreeIn(root);
         System.out.println();
     }
@@ -85,6 +86,7 @@ public class BinarySearchTree {
     }
 
     public void printTreePre() {  //preorder traversal
+        System.out.println("Preorder traversal");
         printTreePre(root);
         System.out.println();
     }
@@ -99,6 +101,7 @@ public class BinarySearchTree {
     }
 
     public void printTreePost() {  //postorder traversal
+        System.out.println("Postorder traversal");
         printTreePost(root);
         System.out.println();
     }
