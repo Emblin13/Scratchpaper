@@ -1,5 +1,6 @@
 package com.company.hashTable;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Hashtable {
@@ -113,6 +114,24 @@ public class Hashtable {
 		for (int i = 0; i < keys.length; i++) {
 			this.remove(keys[i]);
 		}
+	}
+
+	public Object get(Object key) {
+		if (!this.contains(key)) { //Return null if table element is null at the index where the key would be stored
+			return null;
+		}
+		int pos = this.hash(key); //get index of the linkedlist where the record may be stored
+		LinkedList<Record> theList = (LinkedList<Record>) this.table[pos];
+		Iterator<Record> iterator = theList.iterator();
+
+		while (iterator.hasNext()) { //Linearly search theList for a record with a matching key
+			Record record = iterator.next();
+			if (record.key.equals(key)) { //if the current node in the linked list has the matching key
+				return record.value;
+			}
+		}
+
+		return null; //Returns null if table[pos] has a linked list, but that linked list doesn't contain the record
 	}
 
 	public String toString() {
