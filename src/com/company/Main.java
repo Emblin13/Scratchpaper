@@ -1,11 +1,7 @@
 package com.company;
 
-import com.company.linkedList.DoublyLLTester;
-import com.company.linkedList.LinkedList;
-import com.company.recursion.Recursion;
-import com.company.stack.LinkedStack;
-import com.company.hashTable.Hashtable;
 
+import java.util.*;
 
 public class Main {
 
@@ -22,5 +18,21 @@ public class Main {
 
         //Hashtable.main(null); //demo of hashtable
 
+        //Inheritance and Polymorphism
+        //Demo.main(null);
+
+        //Enums
+        //When 2 classes have the same name, only 1 of the imports can be used. Other one must be called like this
+        //com.company.enums.Demo.main(null);
+
+        //Lambda Expressions and Suppliers
+        //.company.lambdaExpressionsAndSuppliers.Demo.main(null);
+
+        Set<String> usernames = new HashSet<>();
+
+
+
     }
+
+
 }
